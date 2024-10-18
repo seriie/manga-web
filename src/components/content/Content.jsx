@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function Content({ title }) {
   const [manga, setManga] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [translate, setTranslate] = useState('');
   const [language, setLanguage] = useState('en');
