@@ -84,8 +84,8 @@ export default function Content({ title }) {
               <p className="text-gray-700"><strong>Status:</strong> {manga.status}</p>
               <p className="text-gray-700"><strong>Published:</strong> {manga.published.string}</p>
               <p className="text-gray-700"><strong>Type:</strong> {manga.type}</p>
-              <p className="text-gray-700"><strong>Chapter:</strong> {manga.chapters}</p>
-              <p className="text-gray-700"><strong>Volume:</strong> {manga.volumes}</p>
+              <p className="text-gray-700"><strong>Chapter:</strong> {manga.chapters || 'N/A'}</p>
+              <p className="text-gray-700"><strong>Volume:</strong> {manga.volumes || 'N/A'}</p>
               <p className="text-gray-700"><strong>Genre:</strong> {manga.genres.map((genre) => genre.name).join(", ")}</p>
               <p className="text-gray-700 mt-4">
                 <strong>Synopsis ({language.toUpperCase()}):</strong> {translate}
